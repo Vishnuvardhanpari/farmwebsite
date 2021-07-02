@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap');
+$black: #000000;
+
+$btn-bs: 1px 10px 30px -10px rgba(102,
+187,
+106,
+1);
+$outer-space: #263238;
+$alabaster: #f7f7f7;
+$limed-spruce: #324148;
+$lynch: #607D8B;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 1.6rem;
+    color: $black;
+}
+
+p{
+    font-size: xx-large;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    
+    text-decoration: none;
+    cursor: pointer;
+    color: $black;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1.5rem;
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.width1 {
+    max-width: 120rem;
+}
+
+.width2 {
+    max-width: 105rem;
+}
+
+.btn {
+    border-radius: .5rem;
+    padding: 1.2rem;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header_logo {
+    flex: 0.5;
+    img {
+        max-width: 8rem;
+    }
+}
+
+.farmer {
+    margin: auto;
+    height: 100vh;
+}
+
+.farmer_content {
+    display: flex;
+}
+
+.farmer_text {
+    margin-top: 10rem;
+    max-width: 50rem;
+}
+
+.farmer_title {
+    font-size: 4.6rem;
+}
+
+.farmer_description {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 5rem;
+    color: $outer-space;
+}
+
+
+.farmer_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 50px;
+    width: 50%;
+    // img {
+    //     max-height: 100vh;
+    //     width: initial;
+    // }
+}
+
+
+
+.opportunities {
+    position: relative;
+}
+
+.opportunities_img {
+    position: absolute;
+    left: -1.5rem;
+    top: -16rem;
+    z-index: -1;
+    img {
+        max-height: 55rem;
+        max-width: 16rem;
+    }
+}
+
+.opportunities_content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $alabaster;
+    margin-bottom: 4rem;
+}
+
+.opportunities_head {
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto 10rem;
+}
+
+.opportunities_title {
+    font-size: 3.6rem;
+    color: $black;
+}
+
+.opportunities_description {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $outer-space;
+}
+
+.opportunities_body {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2.5rem;
+    align-self: baseline;
+}
+
+.opportunity {
+    width: 30%;
+    background-color: $white;
+    border-radius: .5rem;
+    filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
+    padding: 5rem 2.5rem 2.5rem;
+    transition: all 0.3s ease-out;
+    
+}
+
+.opportunity_icon {
+    max-height: 5.6rem;
+    width: initial;
+}
+
+.opportunity_title {
+    font-size: 1.8rem;
+    color: $outer-space;
+    margin: 2.5rem 0;
+}
+
+.opportunity_description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $outer-space;
+}
+
+
+
+.card {
+    margin: auto;
+}
+
+.card_head {
+    max-width: 70rem;
+}
+
+.card_title {
+    font-size: 3.6rem;
+}
+
+.card_description {
+    margin-top: 1.5rem;
+    color: $limed-spruce;
+    font-size: 1.8rem
+}
+
+.card_body {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.card_item1 {
+    padding: 2.5rem;  
+    background-image: url(assets/feature-1.png); 
+    background-size: cover;  
+    border-radius: 3%;
+}
+
+.card_item2 {
+    padding: 2.5rem;  
+    background-image: url(assets/feature-2.png);
+    background-size: cover; 
+    border-radius: 3%;    
+}
+
+
+.card_item_subtitle {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+.card_item_body {
+    margin: 5rem 0 2.5rem;
+}
+
+.card_item_title {
+    color: white;
+    font-weight: bolder;
+    font-size: 3.1rem;
+    max-width: 30rem;
+}
+
+.card_item_description {
+    font-size: 1.6rem;
+    color: white;
+    max-width: 30rem;
+}
+
+
+
+
+/*End card*/
+
+
+/*End How Is work-card*/
+
+.work-card {
+    background-image: url(assets/banner.png ); 
+    background-color: $fern;
+    margin: auto;
+}
+
+.work-card_content {
+    max-width: 70rem;
+    margin: auto;
+    color: $white;
+    padding: 0 1.5rem;
+}
+
+.work-card_head {
+    text-align: center;
+}
+
+.work-card_title {
+    font-size: 3.6rem;
+}
+
+.work-card_description {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.work-card_body {
+    margin: 5rem 0 10rem;
+}
+
+.form_progressbar {
+    display: flex;
+    grid-column-gap: 13rem;
+}
+
+
+
+
+
+.work-card_footer {
+    display: flex;
+    overflow: hidden;
+}
+
+
+.work-card_step_title {
+    font-size: 2.4rem;
+    flex: 5;
+}
+
+.work-card_step_description {
+    flex: 6;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+
+
+.farm-card {
+    margin: auto;
+    padding: 5rem 2.5rem;
+    text-align: center;
+    background-color: $white;
+    filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
+    margin-bottom: 10rem;
+}
+
+.farm-card_title {
+    font-size: 3.6rem;
+    span {
+        color: $fern;
+    }
+}
+
+.btn_farm--card {
+    border: 1px solid $fern;
+    color: $white;
+    display: inline-block;
+    min-width: 25rem;
+    margin-top: 4rem;
+    @include btnShadow;
+    @include btnHoverAnimate($fern,
+    $white,
+    $fern);
+}
+
+
+
+.footer {
+    position: relative;
+}
+
+.footer_body {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2.5rem;
+    align-items: baseline;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $alabaster;
+}
+
+.footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 9 2 auto;
+    grid-row-gap: 2.5rem;
+}
+
+.footer_nav_menu {
+    flex-basis: 33%;
+}
+
+.footer_nav_item {
+    padding: 1rem 2.5rem;
+}
+
+.footer_nav_menu_title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.footer_nav_link {
+    
+    font-size: 1.6rem;
+    color: $lynch;
+    transition: .2s all;
+    &:hover {
+        color: $fern;
+    }
+}
+
+.footer_contact {
+    flex: 1 0 28rem;
+    background-color: $fern;
+    padding: 5rem 5rem 10rem;
+    color: $white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footer_contact_title {
+    margin-bottom: 1.5rem;
+}
+
+.email {
+    color: $white;
+}
+
+
+
+.footer_bottom_content {
+    margin-top: 5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 5rem auto 0;
+    padding-bottom: 10rem;
+}
+
+
